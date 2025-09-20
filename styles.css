@@ -456,6 +456,9 @@ textarea:focus {
   .hero {
     min-height: 58vh;
   }
+  .imagex {
+    height: 80vh;
+  }
 }
 @media (min-width: 700px) {
   .imagex {
