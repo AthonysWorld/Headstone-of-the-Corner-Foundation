@@ -349,7 +349,9 @@ h3 {
   outline: 2px solid var(--brand);
   border-color: transparent;
 }
-
+.pad {
+  margin-bottom: 10px;
+}
 /* Forms */
 .form {
   display: grid;

@@ -324,44 +324,60 @@
             </ul>
           </div>
 
-          <form
-            data-aos="fade-up"
-            id="contactForm"
-            class="form card"
-            novalidate
-          >
-            <label for="name">Full Name</label>
-            <input
-              id="name"
-              name="name"
-              type="text"
-              placeholder="Your name"
-              required
-            />
-            <label for="email">Email</label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              placeholder="you@example.com"
-              required
-            />
-            <label for="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="5"
-              placeholder="How can we help?"
-              required
-            ></textarea>
-            <button class="btn" type="submit">Send Message</button>
-            <p
-              class="form-note"
-              id="formNote"
-              role="status"
-              aria-live="polite"
-            ></p>
-          </form>
+          <div class="container">
+            <h1>Contact Us</h1>
+            <form
+              target="_blank"
+              action="https://formsubmit.co/headstonefoundation001@gmail.com"
+              method="POST"
+            >
+              <div class="form-group">
+                <div class="form-row">
+                  <div class="col pad">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      placeholder="Full Name"
+                      required
+                    />
+                  </div>
+                  <div class="col pad">
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Email Address"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form-group pad">
+                <textarea
+                  placeholder="Your Message"
+                  class="form-control"
+                  name="message"
+                  rows="10"
+                  required
+                ></textarea>
+              </div>
+
+              <!-- Optional: hidden fields for better handling -->
+              <input type="hidden" name="_captcha" value="false" />
+              <!-- disables captcha -->
+              <input
+                type="hidden"
+                name="_next"
+                value="https://yourwebsite.com/thank-you.html"
+              />
+              <!-- redirect after submit -->
+
+              <button type="submit" class="btn btn-lg btn-dark btn-block pad">
+                Send mesaage
+              </button>
+            </form>
+          </div>
         </div>
       </section>
     </main>
